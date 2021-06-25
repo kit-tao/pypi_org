@@ -1,0 +1,21 @@
+{% extends 'shared/_layout.html' %}
+
+{% block title %}PyPi Demo Index  {% endblock %}
+
+{% block main_content %}
+        
+    <h1>Python Package Index</h1>
+    <h2>Packages</h2>
+
+    {% for p in packages %}
+       
+    <div>
+        Name:
+    {{ p.name }}
+    {{ p.version }}
+</div>
+    {% endfor %}
+    
+{% endblock %}
+
+    
