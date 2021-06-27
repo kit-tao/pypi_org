@@ -1,3 +1,22 @@
 {
-    "python.pythonPath": "venv\\Scripts\\python.exe"
+    "python.pythonPath": "venv\\Scripts\\python.exe",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "docker_postgres",
+            "database": "mytest",
+            "username": "postgres",
+            "password": "custard"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "sqlite_local",
+            "database": "${workspaceFolder:pypi_me}/data/sqlite_db/pypi.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }

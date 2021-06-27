@@ -1,7 +1,7 @@
 import flask
 
-from pypi_me.helper.view_modifiers import response
-import pypi_me.services.package_service as package_service
+from pypi_org.helper.view_modifiers import response
+import pypi_org.services.package_service as package_service
 
 
 blueprint = flask.Blueprint('packages',__name__, template_folder='templates')
